@@ -15,22 +15,24 @@
 	.nav {
 		display: flex;
 		align-items: center;
-		border: solid 1px #a8a8a8;
+		border: solid 1px #5d6582;
 		border-radius: 5px;
 		margin: 5px;
 		padding: 5px;
 		width: calc(100% - 20px);
 		height: $nav-height - 20px;
+		background: #ffffff;
 	}
 
 	.content {
 		display: flex;
 		align-items: center;
-		border: solid 1px #a8a8a8;
+		border: solid 1px #5d6582;
 		border-radius: 5px;
 		margin: 5px;
 		padding: 5px;
 		width: calc(100% - 20px);
 		height: calc(100% - $nav-height - 20px);
+		background: #ffffff;
 	}
 </style>
