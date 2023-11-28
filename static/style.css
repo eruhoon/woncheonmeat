@@ -1,29 +1,29 @@
 html,
 body {
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
-	background: #eaeef2;
-	overflow-y: auto;
-	overflow-x: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #eaeef2;
+    overflow-y: auto;
+    overflow-x: none;
 }
 
 body::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
+    width: 5px;
+    height: 5px;
 }
 body::-webkit-scrollbar-button:start:decrement,
 body::-webkit-scrollbar-button:end:increment {
-	display: block;
-	height: 5px;
+    display: block;
+    height: 5px;
 }
 body::-webkit-scrollbar-track {
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 body::-webkit-scrollbar-thumb {
-	height: 50px;
-	width: 50px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
+    height: 50px;
+    width: 50px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
 }
