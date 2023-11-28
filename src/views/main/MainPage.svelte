@@ -11,7 +11,7 @@
 </div>
 
 <style lang="scss">
-    $nav-height: 70px;
+    $nav-height: 50px;
     .nav {
         display: flex;
         align-items: center;
