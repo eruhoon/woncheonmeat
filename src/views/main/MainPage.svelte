@@ -9,7 +9,7 @@
 <div class="content">
     <h1>Welcome to SvelteKit</h1>
     <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-    <Card></Card>
+    <Card image="./favicon.png"></Card>
 </div>
 
 <style lang="scss">
@@ -27,8 +27,6 @@
     }
 
     .content {
-        display: flex;
-        align-items: center;
         border: solid 1px #5d6582;
         border-radius: 5px;
         margin: 5px;
