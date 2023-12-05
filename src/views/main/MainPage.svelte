@@ -1,14 +1,22 @@
 <script lang="ts">
     import Card from '../card/Card.svelte';
     import TopBar from './TopBar.svelte';
+
+    async function fetchInven() {
+        const response = await fetch('/api/maple-inven');
+        return await response.json();
+    }
 </script>
 
 <div class="nav">
     <TopBar />
 </div>
 <div class="content">
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    {#await fetchInven() then articles}
+        {#each articles as article}
+            <Card image="./favicon.png" title={article.title} link={article.link}></Card>
+        {/each}
+    {/await}
     <Card image="./favicon.png"></Card>
 </div>
 
