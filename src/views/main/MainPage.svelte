@@ -1,9 +1,10 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     import Card from '../card/Card.svelte';
     import TopBar from './TopBar.svelte';
 
     async function fetchInven() {
-        const response = await fetch('api/maple-inven');
+        const response = await fetch(`${base}/api/maple-inven`);
         return await response.json();
     }
 </script>
