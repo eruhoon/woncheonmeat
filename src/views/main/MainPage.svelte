@@ -3,7 +3,7 @@
     import TopBar from './TopBar.svelte';
 
     async function fetchInven() {
-        const response = await fetch('/api/maple-inven');
+        const response = await fetch('api/maple-inven');
         return await response.json();
     }
 </script>
