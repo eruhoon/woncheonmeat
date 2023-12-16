@@ -4,7 +4,8 @@
     import TopBar from './TopBar.svelte';
 
     async function fetchInven() {
-        const response = await fetch(`${base}/api/maple-inven`);
+        const url = 'https://ikkanezumi-meow-fairy.koyeb.app/maple-inven';
+        const response = await fetch(url);
         return await response.json();
     }
 </script>
