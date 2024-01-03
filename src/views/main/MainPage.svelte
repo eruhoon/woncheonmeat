@@ -16,7 +16,8 @@
 <div class="content">
     {#await fetchInven() then articles}
         {#each articles as article}
-            <Card image="./favicon.png" title={article.title} link={article.link}></Card>
+            <Card image={article.icon ?? './favicon.png'} title={article.title} link={article.link}
+            ></Card>
         {/each}
     {/await}
     <Card image="./favicon.png"></Card>
