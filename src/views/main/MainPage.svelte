@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { base } from '$app/paths';
     import Card from '../card/Card.svelte';
     import TopBar from './TopBar.svelte';
 
