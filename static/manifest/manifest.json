@@ -19,10 +19,10 @@
     "display": "standalone",
     "dir": "auto",
     "lang": "ko-KR",
-    "name": "패밀리쥐",
-    "short_name": "패밀리쥐",
-    "start_url": "https://eruhoon.github.io/ikkanezumi/",
-    "scope": "https://eruhoon.github.io/ikkanezumi/",
-    "description": "패밀리쥐의 정리정돈 사이트",
-    "id": "https://eruhoon.github.io/ikkanezumi/"
+    "name": "원천미트",
+    "short_name": "원천미트",
+    "start_url": "https://eruhoon.github.io/woncheonmeat/",
+    "scope": "https://eruhoon.github.io/woncheonmeat/",
+    "description": "원천미트 - 천변 메트로놈",
+    "id": "https://eruhoon.github.io/woncheonmeat/"
 }
