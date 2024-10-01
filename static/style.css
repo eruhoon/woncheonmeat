@@ -12,8 +12,6 @@ body {
     height: 100vh;
     margin: 0;
     background: #eaeef2;
-    overflow-y: auto;
-    overflow-x: none;
 }
 
 * {

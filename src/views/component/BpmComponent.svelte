@@ -39,6 +39,17 @@
             font-size: 50px;
             width: 200px;
             height: 200px;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            &[type='number'] {
+                -moz-appearance: textfield;
+            }
         }
         button {
             width: 30px;
@@ -47,6 +58,20 @@
             border: none;
             background: transparent;
             font-size: 30px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    div.preset {
+        button {
+            width: 50px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            background: E8E8E8;
+            font-size: 20px;
             text-align: center;
             margin: 0;
             padding: 0;

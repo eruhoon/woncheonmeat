@@ -39,13 +39,13 @@
 
 <div class="content">
     <h3>Beat</h3>
-    <button on:click={() => (beat = 3)}>3</button>
-    <button on:click={() => (beat = 4)}>4</button>
+    <button class="beat-button" class:active={beat === 3} on:click={() => (beat = 3)}>3</button>
+    <button class="beat-button" class:active={beat === 4} on:click={() => (beat = 4)}>4</button>
 </div>
 
 <div class="content">
     {#if timer !== null}
-        <button on:click={() => stop()}>stop</button>
+        <button on:click={() => stop()}>⏹️</button>
     {:else}
         <button on:click={() => play()}>▶️</button>
     {/if}
@@ -86,5 +86,17 @@
 
     button {
         font-size: 30px;
+    }
+
+    button.beat-button {
+        background: transparent;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+
+        &.active {
+            background: #a8a8a8;
+        }
     }
 </style>
