@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
     import BpmComponent from '../component/BpmComponent.svelte';
 
     let bpm: number = 180;
@@ -14,17 +13,28 @@
     function play() {
         const oneMinute = 60 * 1000;
         const unit = oneMinute / bpm;
-        let now = new Date().getTime();
+        console.log(unit);
+        counter = 0;
         timer = setInterval(() => {
-            player2.play();
+            if (counter === 0) {
+                new Audio('sound/metronome1.mp3').play();
+            } else {
+                new Audio('sound/metronome2.mp3').play();
+            }
+            counter = (counter + 1) % beat;
         }, unit);
+    }
+
+    function stop() {
+        clearInterval(timer);
+        timer = null;
     }
 </script>
 
 <div class="nav"></div>
 <div class="content">
     <h3>BPM</h3>
-    <BpmComponent {bpm} />
+    <BpmComponent bind:bpm />
 </div>
 
 <div class="content">
@@ -34,9 +44,14 @@
 </div>
 
 <div class="content">
-    <button on:click={() => play()}>▶️</button>
-    <audio src="%sveltekit.assets%/sound/metronome1.mp3" bind:this={player1}></audio>
-    <audio src="%sveltekit.assets%/sound/metronome2.mp3" bind:this={player2}></audio>
+    {#if timer !== null}
+        <button on:click={() => stop()}>stop</button>
+    {:else}
+        <button on:click={() => play()}>▶️</button>
+    {/if}
+
+    <audio src="sound/metronome1.mp3" bind:this={player1}></audio>
+    <audio src="sound/metronome2.mp3" bind:this={player2}></audio>
 </div>
 
 <style lang="scss">
