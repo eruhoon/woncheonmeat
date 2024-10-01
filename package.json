@@ -1,5 +1,5 @@
 {
-    "name": "ikkanezumi",
+    "name": "woncheonmeat",
     "version": "0.0.1",
     "private": true,
     "scripts": {
@@ -15,26 +15,26 @@
         "test:unit": "vitest"
     },
     "devDependencies": {
-        "@playwright/test": "^1.28.1",
-        "@sveltejs/adapter-auto": "^2.0.0",
+        "@playwright/test": "^1.47.2",
+        "@sveltejs/adapter-auto": "^2.1.1",
         "@sveltejs/adapter-static": "^2.0.3",
-        "@sveltejs/kit": "^1.27.4",
+        "@sveltejs/kit": "^1.30.4",
         "@types/cheerio": "^0.22.35",
-        "@typescript-eslint/eslint-plugin": "^6.0.0",
-        "@typescript-eslint/parser": "^6.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
         "cheerio": "1.0.0-rc.12",
-        "eslint": "^8.28.0",
-        "eslint-config-prettier": "^9.0.0",
-        "eslint-plugin-svelte": "^2.30.0",
-        "prettier": "^3.0.0",
-        "prettier-plugin-svelte": "^3.0.0",
-        "sass": "^1.69.5",
-        "svelte": "^4.2.7",
-        "svelte-check": "^3.6.0",
-        "tslib": "^2.4.1",
-        "typescript": "^5.0.0",
-        "vite": "^4.4.2",
-        "vitest": "^0.32.2"
+        "eslint": "^8.57.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-svelte": "^2.44.1",
+        "prettier": "^3.3.3",
+        "prettier-plugin-svelte": "^3.2.7",
+        "sass": "^1.79.4",
+        "svelte": "^4.2.19",
+        "svelte-check": "^3.8.6",
+        "tslib": "^2.7.0",
+        "typescript": "^5.6.2",
+        "vite": "^4.5.5",
+        "vitest": "^0.32.4"
     },
     "type": "module"
 }
